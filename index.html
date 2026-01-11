@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VORA - Study Smarter, Not Harder</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0b63be",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2632",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.375rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>html {
+            scroll-behavior: smooth;
+        }::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-50 font-display transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<nav class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-surface-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="px-4 md:px-10 py-3 flex justify-center">
+<div class="w-full max-w-[1280px] flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-3 text-slate-900 dark:text-white group cursor-pointer">
+<div class="size-8 flex items-center justify-center rounded bg-white">
+<img src="VoraLogo.png" alt="VORA Logo" class="w-7 h-7 object-contain">
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">VORA</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8 items-center">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#features">Features</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex justify-end gap-4">
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary hover:bg-primary-dark text-white text-sm font-bold shadow-sm hover:shadow-md transition-all duration-200">
+<span class="truncate">Download</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<section class="flex flex-col items-center justify-center py-12 md:py-20 lg:py-24 px-4 md:px-10">
+<div class="max-w-[1280px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6 order-2 lg:order-1 text-center lg:text-left">
+<div class="flex flex-col gap-4">
+<div class="inline-flex w-fit mx-auto lg:mx-0 items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Version 2.0 is live</span>
+</div>
+<h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                            Study Smarter,<br/>
+<span class="text-primary">Not Harder.</span>
+</h1>
+<h2 class="text-slate-600 dark:text-slate-300 text-base md:text-lg font-normal leading-relaxed max-w-lg mx-auto lg:mx-0">
+                            The all-in-one companion for managing coursework, tracking progress, and mastering your schedule. Focus on what matters most.
+                        </h2>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+<button class="flex h-12 items-center justify-center gap-2 rounded-lg bg-primary hover:bg-primary-dark text-white px-8 text-base font-bold shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-0.5">
+<span>Get the App</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="flex h-12 items-center justify-center gap-2 rounded-lg bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white px-8 text-base font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<span>Learn More</span>
+</button>
+</div>
+<div class="flex items-center justify-center lg:justify-start gap-4 pt-2 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full border-2 border-white dark:border-background-dark bg-slate-200 bg-cover bg-center" data-alt="Student user portrait 1" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCX2l7rvYnp7zUrVktxcb5lcwfAKxXLyOXRauKjMu5abbxaEG7DQMD6Odi24yp4XMtBhEijHyxN1hjoB8Lg60p0Yge92AKQ36-N4nQd5jFI_GyIREcXABcZXEDOsrRiKhAFzTREv8-cxlMRnWQi-c0cX1ecs7XRNwCaUztDvyOvo8asNGaNz-VBkimrZ79DOkdR1_ZZnPbK5zwzERW86UYeTm7rRC93izmlzwz6xus8mUKf6LoC6dAkW_41WgSZThOOFc-ReUQH0nAA');"></div>
+<div class="size-8 rounded-full border-2 border-white dark:border-background-dark bg-slate-300 bg-cover bg-center" data-alt="Student user portrait 2" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZH8Nd5xIudan6xrfKs5J4ypUYdCy6oT0MoCX9qxtyMOqu_iE1XA1bNLU6t9KtYjh3sWA9AWGAPMZ-rPzbvHi1001zAVgjAVpYcbjNz4i9QONphXSDfnbnGYgo6zn1gxK0w9v80qF94G_RIXbSrH2x0GFJAornXEkhYNxLSAqUo97By-Yfh_USaoTNyMrPHO8iXHpqcJHKs43N0X3M8Qt_pn2RtqmdSgBdaDBuowC88SuuL0dWW19V2p3IrAYqlhPH2a6JOBGGoo25');"></div>
+<div class="size-8 rounded-full border-2 border-white dark:border-background-dark bg-slate-400 bg-cover bg-center" data-alt="Student user portrait 3" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIznWOphs0GHi24zAMZyY9kvvVImi54hwPBauqkt611mDOXQ9muX8yZfxBG0_ygH-cui97DEqzz_6wbyFRNj43hJonmUwGOZ1MgOSGhdRHanEqriUC1WcfGqBd_Sy1rS7-1UWtyBANH2a_t8E0Yr7B9oj8MyeDGmjhqXCSviLLtPr1y6TX4mlgOcMOKqhv22ERaOPPzcr2B2iFnHLT3xbkUgO4_zdb6HR-jzgeq91SA9XzWo9KxlOVGbsB92pzMqtHr2ZLRHZLHwKe');"></div>
+</div>
+<p>Trusted by 10,000+ students</p>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex justify-center relative">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-primary/20 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
+<div class="relative w-full max-w-[400px] aspect-[4/5] lg:aspect-square bg-slate-200 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-surface-dark group hover:shadow-3xl transition-shadow duration-300">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Clean mobile app interface displayed on a phone screen showing a study schedule" style="background-image: url('image1.png');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
+<div class="bg-white/90 dark:bg-black/80 backdrop-blur p-4 rounded-xl border border-white/20">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-bold dark:text-white">Biology 101 Completed</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[85%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white dark:bg-surface-dark/50" id="features">
+<div class="layout-container px-4 md:px-10 flex justify-center">
+<div class="max-w-[1100px] w-full flex flex-col gap-12">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-primary font-bold tracking-wide uppercase text-sm">Features</h2>
+<h1 class="text-slate-900 dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-tight max-w-[720px]">
+                            Everything you need to succeed
+                        </h1>
+<p class="text-slate-600 dark:text-slate-400 text-base md:text-lg max-w-[640px]">
+                            VORA provides the tools to help you visualize your syllabus, focus on what matters, and achieve your academic goals.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">book_2</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Course Breakdown</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Visualize your entire syllabus instantly with detailed topic breakdowns and milestones.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">timer</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Smart Timers</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Focus techniques like Pomodoro built right in to maximize productivity sessions.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">calendar_month</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Study Planning</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Automated study schedules generated intelligently based on your assignment deadlines.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">monitoring</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Progress Tracking</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Watch your grades improve in real-time with beautiful, easy-to-read visual charts.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800" id="team">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10">
+<div class="flex flex-col gap-12">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-primary font-bold tracking-wide uppercase text-sm">Our Team</h2>
+<h1 class="text-slate-900 dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-tight">
+                    Building for Students
+                </h1>
+<p class="text-slate-600 dark:text-slate-400 text-base md:text-lg max-w-[600px]">
+                    We are a group of passionate individuals dedicated to making education more accessible and manageable.
+                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<div class="group relative flex flex-col items-center p-8 bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-300 dark:text-slate-600 mb-6 group-hover:scale-110 group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 overflow-hidden group-hover:scale-110 transition-all duration-300">
+<img src="Abishek.jpeg" alt="Abishek S" class="w-full h-full object-cover">
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Abishek S</h3>
+<p class="text-sm font-medium text-primary mb-4">Frontend Devoloper</p>
+<p class="text-center text-sm text-slate-500 dark:text-slate-400">
+                        Dedicated to creating a virtual study assistant
+                    </p>
+</div>
+<div class="group relative flex flex-col items-center p-8 bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-300 dark:text-slate-600 mb-6 group-hover:scale-110 group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 overflow-hidden group-hover:scale-110 transition-all duration-300">
+<img src="Thisarani.jpeg" alt="Thisarani S" class="w-full h-full object-cover">
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Thisarani S</h3>
+<p class="text-sm font-medium text-primary mb-4">UI/UX Designer</p>
+<p class="text-center text-sm text-slate-500 dark:text-slate-400">
+                        Speacializing in human phychology and pattern recognition
+                    </p>
+</div>
+<div class="group relative flex flex-col items-center p-8 bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-300 dark:text-slate-600 mb-6 group-hover:scale-110 group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 overflow-hidden group-hover:scale-110 transition-all duration-300">
+<img src="Abdullah.jpeg" alt="Abdullah F" class="w-full h-full object-cover">
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Abdullah F</h3>
+<p class="text-sm font-medium text-primary mb-4">Backend Developer + Marketer</p>
+<p class="text-center text-sm text-slate-500 dark:text-slate-400">
+                        Strategizing backend and providng marketing insights
+                    </p>
+</div>
+<div class="group relative flex flex-col items-center p-8 bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-300 dark:text-slate-600 mb-6 group-hover:scale-110 group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 overflow-hidden group-hover:scale-110 transition-all duration-300">
+<img src="Anaaf.jpeg" alt="Anaaf S" class="w-full h-full object-cover">
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Anaaf S</h3>
+<p class="text-sm font-medium text-primary mb-4">Frontend Developer + UI/UX Designer </p>
+<p class="text-center text-sm text-slate-500 dark:text-slate-400">
+                        Bringing design concepts to life with pixel-perfect precision
+                    </p>
+</div>
+<div class="group relative flex flex-col items-center p-8 bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-300 dark:text-slate-600 mb-6 group-hover:scale-110 group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 overflow-hidden group-hover:scale-110 transition-all duration-300">
+<img src="Thivishan.jpeg" alt="Thivishan T" class="w-full h-full object-cover">
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Thivishan T</h3>
+<p class="text-sm font-medium text-primary mb-4">Frontend Developer + Marketer</p>
+<p class="text-center text-sm text-slate-500 dark:text-slate-400">
+                        Ensuring proper development and marketing
+                    </p>
+</div>
+<div class="group relative flex flex-col items-center p-8 bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-300 dark:text-slate-600 mb-6 group-hover:scale-110 group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300">
+<div class="size-24 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 overflow-hidden group-hover:scale-110 transition-all duration-300">
+<img src="Arkshayan.jpeg" alt="Arkshayan B" class="w-full h-full object-cover">
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Arkshayan B</h3>
+<p class="text-sm font-medium text-primary mb-4">Backend Developer</p>
+<p class="text-center text-sm text-slate-500 dark:text-slate-400">
+                        Precise about funtional and safe data entry and storage
+                    </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 md:py-28 px-4 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-surface-dark dark:to-background-dark border-y border-slate-200 dark:border-slate-800">
+<div class="max-w-[1000px] mx-auto text-center flex flex-col items-center gap-8">
+<div class="flex flex-col gap-4 max-w-[720px]">
+<h1 class="text-slate-900 dark:text-white text-3xl md:text-5xl font-black leading-tight tracking-tight">
+                        Ready to Ace Your Semester?
+                    </h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl font-normal">
+                        Join thousands of students who are studying smarter. Download VORA today on your mobile device.
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full justify-center pt-4">
+<button class="group flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-800 dark:bg-white dark:hover:bg-slate-200 text-white dark:text-slate-900 px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 min-w-[200px]">
+<span class="material-symbols-outlined text-[28px]">stars</span> 
+<div class="flex flex-col items-start leading-none">
+<span class="text-[10px] uppercase font-medium opacity-80">Download on the</span>
+<span class="text-lg font-bold">App Store</span>
+</div>
+</button>
+<button class="group flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-800 dark:bg-white dark:hover:bg-slate-200 text-white dark:text-slate-900 px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 min-w-[200px]">
+<span class="material-symbols-outlined text-[28px]">play_arrow</span> 
+<div class="flex flex-col items-start leading-none">
+<span class="text-[10px] uppercase font-medium opacity-80">Get it on</span>
+<span class="text-lg font-bold">Google Play</span>
+</div>
+</button>
+</div>
+<div class="pt-8">
+<div class="rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-700 max-w-[600px] w-full mx-auto aspect-[16/9]">
+<div class="w-full h-full bg-cover bg-center" data-alt="Group of diverse university students studying together around a table with laptops and notebooks" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLGdQqdMgP6xlXqsALgJqH7nUR234MGNA5yBdGxDmsxcQx9P-qG5h-SJWxpbnyHLfpBUQlwwRiqdHiCqCRmTq5GN5n6Svcg7-DyhEUHRMqqGW-erYJpR5HNqLpXyHxrhs9NsmRSmyXOyErN8_SOZfpnmWZ5NuqZxpH0f38-rDGNQHdcPPux3ok-foAW8MzoI5T0jE7_BZJtXQnhC791e8cVO2XUECy7ulhQ2w5A7Elxd2ROdhuHtEf6d3AzssuqQ9HxWbuE4ZKWFry');"></div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-[1280px] mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-center md:justify-start gap-2 text-slate-900 dark:text-white">
+<div class="size-6 flex items-center justify-center rounded bg-white">
+<img src="VoraLogo.png" alt="VORA Logo" class="w-7 h-7 object-contain">
+</div>
+<h2 class="text-lg font-bold">VORA</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Empowering students worldwide.</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary dark:hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary dark:hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary dark:hover:text-primary transition-colors" href="#">Support</a>
+</div>
+<div class="text-slate-400 dark:text-slate-500 text-sm">
+                    © 2025 VORA. All rights reserved.
+                </div>
+</div>
+</footer>
+</div>
+</body></html>
